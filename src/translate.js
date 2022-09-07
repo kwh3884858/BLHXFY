@@ -9,6 +9,7 @@ import transNpcSkill from './modules/skill-npc'
 import transJobSkill from './modules/skill-job'
 import transHTML from './modules/content-html'
 import transTownInfo from './modules/town-info'
+import transTutorialMoive from './modules/tutorial-moview'
 import transIslandInfo from './modules/island-info'
 import transChat from './modules/chat-preset'
 import transBattle, { transBattleR } from './modules/battle'
@@ -69,6 +70,7 @@ const requestList = [
   ['/profile/content/index/', getUserName],
   ['/content/',[transLangMsg, transHTML, replaceHour]],
   ['/user/content/index', [transTownInfo, pageIndex]],
+  ['/rest/tutorial/movies', transTutorialMoive],
   ['/comic/content/episode/', transComic],
   ['/comic/content/index', transComicT],
   ['/comic/list/', transComicD],
